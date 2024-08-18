@@ -37,7 +37,7 @@ addButton.pack()
 finishButton = Button(root,text='FINISH',command=finishFunc)
 finishButton.pack(side='bottom',padx=10,pady=10)
 
-root.mainloop()
+root.Station 2loop()
 
 while True:
     try:
@@ -69,124 +69,124 @@ for r in range(20):
     schedule.append(tempList)
 
 for r in range(20):
-    frontCount = False
+    altBreakCount = False
     currentMax = len(timeDict[str(r)])
     if currentMax == 5:
         for c in range(currentMax):
             if schedule[r][c] == 0:
-                schedule[r][c] = 'indoor'
+                schedule[r][c] = 'Station 1'
             elif schedule[r][c] == 1:
-                schedule[r][c] = 'main'
+                schedule[r][c] = 'Station 2'
             elif schedule[r][c] == 2:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
             elif schedule[r][c] == 3:
-                schedule[r][c] = 'hell'
+                schedule[r][c] = 'Station 3'
             elif schedule[r][c] == 4:
-                schedule[r][c] = 'baby'
+                schedule[r][c] = 'Station 4'
     elif currentMax == 6:
         for c in range(currentMax):
             if schedule[r][c] == 0:
-                schedule[r][c] = 'indoor'
+                schedule[r][c] = 'Station 1'
             elif schedule[r][c] == 1:
-                schedule[r][c] = 'main'
+                schedule[r][c] = 'Station 2'
             elif schedule[r][c] == 2:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
             elif schedule[r][c] == 3:
-                schedule[r][c] = 'hell'
+                schedule[r][c] = 'Station 3'
             elif schedule[r][c] == 4:
-                schedule[r][c] = 'baby'
+                schedule[r][c] = 'Station 4'
             elif schedule[r][c] == 5:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
     elif currentMax == 7:
         for c in range(currentMax):
             if schedule[r][c] == 0:
-                schedule[r][c] = 'indoor'
+                schedule[r][c] = 'Station 1'
             elif schedule[r][c] == 1:
-                schedule[r][c] = 'main'
+                schedule[r][c] = 'Station 2'
             elif schedule[r][c] == 2:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
             elif schedule[r][c] == 3:
-                schedule[r][c] = 'hell'
+                schedule[r][c] = 'Station 3'
             elif schedule[r][c] == 4:
-                schedule[r][c] = 'baby'
+                schedule[r][c] = 'Station 4'
             elif schedule[r][c] == 5:
-                schedule[r][c] = 'roaming'
+                schedule[r][c] = 'Station 5'
             elif schedule[r][c] == 6:
-                if frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount = True
+                if altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount = True
                 else:
                     schedule[r][c] = 'break'
     elif currentMax < 5:
         for c in range(currentMax):
             if schedule[r][c] == 0:
-                schedule[r][c] = 'indoor'
+                schedule[r][c] = 'Station 1'
             elif schedule[r][c] == 1:
-                schedule[r][c] = 'main'
+                schedule[r][c] = 'Station 2'
             elif schedule[r][c] == 2:
-                schedule[r][c] = 'baby'
+                schedule[r][c] = 'Station 4'
             elif schedule[r][c] == 3:
-                if frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount = True
+                if altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount = True
                 else:
                     schedule[r][c] = 'break'
     elif currentMax > 7:
         for c in range(currentMax):
             if schedule[r][c] == 0:
-                schedule[r][c] = 'indoor'
+                schedule[r][c] = 'Station 1'
             elif schedule[r][c] == 1:
-                schedule[r][c] = 'main'
+                schedule[r][c] = 'Station 2'
             elif schedule[r][c] == 2:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
             elif schedule[r][c] == 3:
-                schedule[r][c] = 'hell'
+                schedule[r][c] = 'Station 3'
             elif schedule[r][c] == 4:
-                schedule[r][c] = 'baby'
+                schedule[r][c] = 'Station 4'
             elif schedule[r][c] == 5:
-                if frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount = True
+                if altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount = True
                 else:
                     schedule[r][c] = 'break'
             elif schedule[r][c] == 6:
-                schedule[r][c] = 'roaming'
+                schedule[r][c] = 'Station 5'
             else:
                 if c % 3 == 0:
-                    schedule[r][c] = 'clean'
-                elif frontCount == False:
-                    schedule[r][c] = 'front'
-                    frontCount == True
+                    schedule[r][c] = 'altBreak2'
+                elif altBreakCount == False:
+                    schedule[r][c] = 'altBreak'
+                    altBreakCount == True
                 else:
                     schedule[r][c] = 'break'
 def finalTransformation():
@@ -214,4 +214,4 @@ def finalTransformation():
 scheduleGUI = Tk()
 scheduleText = Label(scheduleGUI,text=finalTransformation(),font='Courier',anchor='w',justify='left')
 scheduleText.pack()
-scheduleGUI.mainloop()
+scheduleGUI.Station 2loop()
